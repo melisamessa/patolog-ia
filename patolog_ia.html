@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elige una opción</title>
+    <link rel="stylesheet" href="style_patologia.css">
+</head>
+<body>
+    <h1 class="title">Elige una opción</h1>
+    <div class="container">
+        <div class="option">
+            <img src="corazon.png" alt="Corazón" class="organ" data-name="Corazón">
+            <p class="organ-name">Corazón</p>
+        </div>
+        <div class="option">
+            <img src="pulmones.png" alt="Pulmones" class="organ" data-name="Pulmones">
+            <p class="organ-name">Pulmones</p>
+        </div>
+        <div class="option">
+            <img src="cerebro.png" alt="Cerebro" class="organ" data-name="Cerebro">
+            <p class="organ-name">Cerebro</p>
+        </div>
+        <div class="option">
+            <img src="pancreas.png" alt="Páncreas" class="organ" data-name="Páncreas">
+            <p class="organ-name">Páncreas</p>
+        </div>
+        <div class="option">
+            <img src="higado.jpg" alt="Hígado" class="organ" data-name="Hígado">
+            <p class="organ-name">Hígado</p>
+        </div>
+        <div class="option">
+            <img src="riñones.jpg" alt="Riñones" class="organ" data-name="Riñones">
+            <p class="organ-name">Riñones</p>
+        </div>
+        <!-- Agrega más opciones según sea necesario -->
+    </div>
+    <div class="image-upload-section" style="display: none;">
+        <input type="file" id="fileInput" accept="image/*">
+        <label for="fileInput">Selecciona la imagen médica a analizar</label>
+        
+    </div>
+    <button id="backButton">Volver Atrás</button>
+    <script src="script_patologia.js"></script>
+</body>
+</html>

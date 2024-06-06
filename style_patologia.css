@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C8D9E8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.title {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.option {
+    margin: 10px;
+    text-align: center;
+}
+
+.option img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    border: 3px solid #000;
+}
+
+.option p {
+    margin: 5px;
+}
+
+.option img:hover {
+    transform: scale(1.1);
+}
+#backButton {
+    background-color: #002655;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Espacio entre el botón y la sección de carga de imagen */
+}
+
+#backButton:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para centrar la sección de carga de imagen */
+.image-upload-section {
+    text-align: center;
+    margin-top: 20px; /* Espacio entre la imagen del órgano y la sección de carga de imagen */
+}
+
+/* Estilos para centrar la imagen del órgano seleccionado */
+.selected-organ {
+    text-align: center;
+    margin-top: 20px; /* Espacio entre la parte superior de la página y la imagen del órgano */
+}
+
+.selected-organ-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.selected-organ-name {
+    margin-top: 10px; /* Espacio entre la imagen del órgano y su nombre */
+}
+
+.no-hover-effect {
+    pointer-events: none;
+}
