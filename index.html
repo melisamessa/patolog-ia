@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patolog-IA - Innovamos para tu salud</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-image: url('inicio.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #004F83;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+            color: #004F83;
+        }
+        header p {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #004F83;
+        }
+        nav {
+            background-color: #003366;
+            overflow: hidden;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            display: inline-block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #004F83;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            background-color: #fff;
+            margin: 0;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .section h2 {
+            color: #004F83;
+            text-align: center;
+        }
+        .section p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .enterprise-section {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .enterprise-item {
+            width: 23%;
+        }
+        .enterprise-item img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .enterprise-item h3 {
+            color: #004F83;
+        }
+        .team {
+            display: flex;
+            justify-content: space-around;
+        }
+        .team div {
+            text-align: center;
+            margin: 10px;
+        }
+        .team img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #004F83;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PATOLOG-<img src="microscopio.png" alt="I" style="vertical-align: top; width: 60px;">A</h1>
+        <p>Innovamos para tu salud</p>
+        <a href="user_interface.html">
+            <button style="background-color: #193e71; border: 2px solid #002655; color: #fff; padding: 15px 20px; font-size: 1em; cursor: pointer;">Acceder</button>
+        </a>
+    </header>
+    <nav>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#nuestra-empresa">Nuestra Empresa</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="container">
+        <div id="sobre-nosotros" class="section">
+            <div class="enterprise-section">
+                <div class="enterprise-item">
+                    <h2>Sobre Nosotros</h2>
+                    <p>Somos una empresa tecnológica dedicada a la creación y distribución de una aplicación avanzada que utiliza inteligencia artificial para la detección de tumores de diferentes órganos. Nuestra aplicación proporciona análisis rápidos y precisos, facilitando la detección temprana y mejorando la accesibilidad a la atención médica de calidad.</p>
+                    <p>Nuestro objetivo es brindar apoyo en el área de la salud con el diagnóstico médico, permitiendo que los profesionales ahorren tiempo y recursos, mientras nuestros usuarios se benefician de una herramienta intuitiva y eficiente. Con nuestra tecnología, esperamos mejorar significativamente los resultados de salud, permitiendo a los médicos centrarse en lo más importante: cuidar de sus pacientes.</p>
+                </div>
+                <div class="enterprise-item">
+                    <img src="mision.png" alt="Misión">
+                </div>
+            </div>
+        </div>
+        <div id="nuestra-empresa" class="section">
+            <h2>Nuestra Empresa</h2>
+            <div class="enterprise-section">
+                <div class="enterprise-item">
+                    <img src="mision.png" alt="Misión">
+                    <h3>Misión</h3>
+                    <p>Proporcionar a los profesionales de la salud una herramienta innovadora y accesible que permita la detección temprana y precisa de tumores utilizando inteligencia artificial para mejorar los resultados de salud y salvar vidas.</p>
+                </div>
+                <div class="enterprise-item">
+                    <img src="vision.png" alt="Visión">
+                    <h3>Visión</h3>
+                    <p>Ser líderes en el desarrollo de tecnologías médicas innovadoras contribuyendo a un sistema de salud más eficiente y accesible para todos.</p>
+                </div>
+                <div class="enterprise-item">
+                    <img src="valores.png" alt="Valores">
+                    <h3>Valores</h3>
+                    <ul>
+                        <li>Innovación</li>
+                        <li>Precisión</li>
+                        <li>Integridad</li>
+                        <li>Calidad</li>
+                        <li>Transparencia</li>
+                        <li>Responsabilidad</li>
+                        <li>Accesibilidad</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div id="equipo" class="section">
+            <h2>Equipo</h2>
+            <div class="team">
+                <div>
+                    <img src="team1.jpg" alt="Miembro del equipo 1">
+                    <p>Nombre 1</p>
+                </div>
+                <div>
+                    <img src="team2.jpg" alt="Miembro del equipo 2">
+                    <p>Nombre 2</p>
+                </div>
+                <div>
+                    <img src="team3.jpg" alt="Miembro del equipo 3">
+                    <p>Nombre 3</p>
+                </div>
+                <div>
+                    <img src="team4.jpg" alt="Miembro del equipo 4">
+                    <p>Nombre 4</p>
+                </div>
+            </div>
+        </div>
+        <div id="contacto" class="section">
+            <h2>Contacto</h2>
+            <p>Puedes contactarnos a través del correo electrónico info@patolog-ia.com o llamarnos al 123-456-7890.</p>
+            <p>También puedes visitarnos en nuestra oficina central en Universidad Nacional del Crentro de la Provincia de Buenos Aires, Tandil, Argentina.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Patolog-IA. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
