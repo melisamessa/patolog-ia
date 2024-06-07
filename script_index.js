@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     const teamMembers = document.querySelectorAll('.team-member');
-    let equipoVisited = false; // Variable de control para verificar si se ha visitado la sección "Equipo"
+    let equipoVisited = false;
 
     function animateTeam() {
         teamMembers.forEach((member, index) => {
             setTimeout(() => {
                 member.classList.add('visible');
-            }, index * 200); // Cambia el tiempo de retraso según lo desees
+            }, index * 200);
         });
     }
 
@@ -20,31 +20,40 @@ document.addEventListener('DOMContentLoaded', function() {
         );
     }
 
-    // Función para manejar el evento de scroll
     function handleScroll() {
         if (!equipoVisited && isInViewport(document.getElementById('equipo'))) {
             animateTeam();
-            equipoVisited = true; // Marca la sección "Equipo" como visitada
-            // Desvincula el evento de scroll después de la primera animación
+            equipoVisited = true;
             window.removeEventListener('scroll', handleScroll);
         }
     }
 
-    // Agrega un evento de clic al enlace de la sección "Equipo"
     const equipoLink = document.querySelector('nav a[href="#equipo"]');
     equipoLink.addEventListener('click', function(event) {
-        event.preventDefault(); // Evita que el enlace recargue la página
+        event.preventDefault();
 
-        // Hace scroll hasta la sección del equipo
-        document.querySelector('#equipo').scrollIntoView({ behavior: 'smooth' });
+        const target = document.querySelector('#equipo');
+        const offset = 60; // Altura de la barra de navegación
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = target.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        const offsetPosition = elementPosition - offset;
 
-        // Verifica si se ha visitado previamente la sección "Equipo"
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+
         if (!equipoVisited) {
             animateTeam();
-            equipoVisited = true; // Marca la sección "Equipo" como visitada
+            equipoVisited = true;
         }
     });
 
-    // Agrega un evento de scroll para manejar la animación cuando se hace scroll hacia abajo
     window.addEventListener('scroll', handleScroll);
+
+    // Script para ajustar la posición de desplazamiento al cargar la página
+    window.addEventListener('beforeunload', function () {
+        window.scrollTo(0, 0); // Ajusta la posición de desplazamiento al cargar la página
+    });
 });
