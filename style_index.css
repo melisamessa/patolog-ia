@@ -106,6 +106,7 @@ h2{
     border-top-right-radius: 9px;
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px;
+    text-decoration: none;
 }
 
 .button:hover {
