@@ -8,90 +8,141 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>PATOLOG-<img src="microscopio.png" alt="I" style="vertical-align: top; width: 60px;">A</h1>
-        <p>Innovamos para tu salud</p>
-        <a href="user_interface.html">
-            <button class="btn-acceder">Acceder</button>
-        </a>
-    </header>
-    <nav>
-        <a href="#sobre-nosotros">Sobre Nosotros</a>
-        <a href="#nuestra-empresa">Nuestra Empresa</a>
-        <a href="#equipo">Equipo</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-    <div class="container">
-        <div id="sobre-nosotros" class="section">
+    <section class="hero-section">
+        <div class="nav-wrapper"><img src="logo_sinSlogan.png" loading="lazy" width="267" size="663">
+            <div class="nav-buttons">
+                <a href="#about-us" class="nav-link">Sobre nosotros</a>
+                <a href="#our-company" class="nav-link">Nuestra empresa</a>
+                <a href="#team-members" class="nav-link">Equipo</a>
+                <a href="#demostration" class="nav-link">Demo</a>
+                <a href="#contactanos" class="nav-link">Contacto</a>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="first-h1">PATOLOG-IA</h1>
+            <p class="paragraph">Innovamos para tu salud</p>
+            <a class="button w-button">ACCEDER</a>
+        </div>
+    </section>
+    <section class="contenedor">
+        <div id="about-us" class="sobre-nosotros-section">
             <div class="sobre-nosotros-content">
                 <div class="sobre-nosotros-text">
-                    <h2>Sobre Nosotros</h2>
-                    <p>Somos una empresa tecnológica dedicada a la creación y distribución de una aplicación avanzada que utiliza inteligencia artificial para la detección de tumores de diferentes órganos. Nuestra aplicación proporciona análisis rápidos y precisos, facilitando la detección temprana y mejorando la accesibilidad a la atención médica de calidad.</p>
-                    <p>Nuestro objetivo es brindar apoyo en el área de la salud con el diagnóstico médico, permitiendo que los profesionales ahorren tiempo y recursos, mientras nuestros usuarios se benefician de una herramienta intuitiva y eficiente. Con nuestra tecnología, esperamos mejorar significativamente los resultados de salud, permitiendo a los médicos centrarse en lo más importante: cuidar de sus pacientes.</p>
+                    <h2 class="heading">Sobre nosotros</h2>
+                    <p class="paragraph-2">Somos una empresa tecnológica dedicada a la creación y distribución de una aplicación avanzada que utiliza inteligencia artificial para la detección de tumores de diferentes órganos. Nuestra aplicación proporciona análisis rápidos y precisos, facilitando la detección temprana y mejorando la accesibilidad a la atención médica de calidad. </p>
+                    <p class="paragraph-2">Nuestro objetivo es brindar apoyo en el área de la salud con el diagnóstico médico, permitiendo que los profesionales ahorren tiempo y recursos, mientras nuestros usuarios se benefician de una herramienta intuitiva y eficiente. Con nuestra tecnología, esperamos mejorar significativamente los resultados de salud, permitiendo a los médicos centrarse en lo más importante: cuidar de sus pacientes.</p>
                 </div>
                 <div class="sobre-nosotros-img">
-                    <img src="sobre_nosotros.png" alt="Misión">
+                    <img src="sobre_nosotros.png" loading="lazy" width="500">
                 </div>
             </div>
         </div>
-        <div id="nuestra-empresa" class="section">
-            <h2>Nuestra Empresa</h2>
+        <div id="our-company" class="nuestra-empresa-section">
+            <h2 class="heading-7">Nuestra empresa</h2>
             <div class="enterprise-section">
                 <div class="enterprise-item">
-                    <img src="mision.png" alt="Misión">
-                    <h3>Misión</h3>
-                    <p>Proporcionar a los profesionales de la salud una herramienta innovadora y accesible que permita la detección temprana y precisa de tumores utilizando inteligencia artificial para mejorar los resultados de salud y salvar vidas.</p>
+                    <img class="image-3" src="mision.png" loading="lazy" width="160">
+                    <h3 class="heading-4">Misión</h3>
+                    <p class="paragraph-3">Proporcionar a los profesionales de la salud una herramienta innovadora y accesible que permita la detección temprana y precisa de tumores utilizando inteligencia artificial para mejorar los resultados de salud y salvar vidas.</p>
                 </div>
                 <div class="enterprise-item">
-                    <img src="vision.png" alt="Visión">
-                    <h3>Visión</h3>
-                    <p>Ser líderes en el desarrollo de tecnologías médicas innovadoras contribuyendo a un sistema de salud más eficiente y accesible para todos.</p>
+                    <img class="image-4" src="vision.png" loading="lazy" width="160">
+                    <h3 class="heading-5">Visión</h3>
+                    <p class="paragraph-4">Ser líderes en el desarrollo de tecnologías médicas innovadoras contribuyendo a un sistema de salud más eficiente y accesible para todos.</p>
                 </div>
                 <div class="enterprise-item">
-                    <img src="valores.png" alt="Valores">
-                    <h3>Valores</h3>
-                    <ul>
-                        <li>Innovación</li>
-                        <li>Precisión</li>
-                        <li>Integridad</li>
-                        <li>Calidad</li>
-                        <li>Transparencia</li>
-                        <li>Responsabilidad</li>
-                        <li>Accesibilidad</li>
+                    <img class="image-5" src="valores.png" loading="lazy" width="160">
+                    <h3 class="heading-3">Valores</h3>
+                    <ul role="list" class="list">
+                        <li><p class="paragraph-5">Innovación</p></li>
+                        <li><p class="paragraph-5">Presición</p></li>
+                        <li><p class="paragraph-5">Integridad</p></li>
+                        <li><p class="paragraph-5">Calidad</p></li>
+                        <li><p class="paragraph-5">Transparencia</p></li>
+                        <li><p class="paragraph-5">Responsabilidad</p></li>
+                        <li><p class="paragraph-5">Accesibilidad</p></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div id="equipo" class="section">
-            <h2>Equipo</h2>
-            <div class="team" id="team">
+        <div id="team-members" class="team-section">
+            <h2 class="heading-6">Equipo</h2>
+            <div style="opacity:1" class="team">
                 <div class="team-member">
-                    <img src="miembro_1.png" alt="Miembro del equipo 1">
-                    <p>Tomás Ceschini</p>
+                    <img class="team-img" src="miembro_1.png" loading="lazy" width="160" sizes="160">
+                    <p class="paragraph-15">Tomás Ceschini</p>
                 </div>
                 <div class="team-member">
-                    <img src="miembro_2.png" alt="Miembro del equipo 2">
-                    <p>Ignacio Ciano</p>
+                    <img class="team-img" src="miembro_2.png" loading="lazy" width="160" sizes="160">
+                    <p class="paragraph-15">Ignacio Ciano</p>
                 </div>
                 <div class="team-member">
-                    <img src="miembro_3.png" alt="Miembro del equipo 3">
-                    <p>Agustín D'onofrio</p>
+                    <img class="team-img" src="miembro_3.png" loading="lazy" width="160" sizes="160">
+                    <p class="paragraph-15">Agustín D'onofrio</p>
                 </div>
                 <div class="team-member">
-                    <img src="miembro_4.png" alt="Miembro del equipo 4">
-                    <p>Melisa Annabella Messa Muñoz</p>
+                    <img class="team-img" src="miembro_4.png" loading="lazy" width="160" sizes="160">
+                    <p class="paragraph-15">Melisa Annabella Messa Muñoz</p>
                 </div>
             </div>
         </div>
-        <div id="contacto" class="section">
-            <h2>Contacto</h2>
-            <p>Puedes contactarnos a través del correo electrónico info@patolog-ia.com o llamarnos al 123-456-7890.</p>
-            <p>También puedes visitarnos en nuestra oficina central en Universidad Nacional del Crentro de la Provincia de Buenos Aires, Tandil, Argentina.</p>
+        <div id="demostration" class="demo-section">
+            <h2 class="heading-6">Demo</h2>
+            <div class="demo-content">
+                <div class="sobre-nosotros-text">
+                    <p class="paragraph-2">Presentación del primer prototipo de la aplicación.</p>
+                    <p class="paragraph-2">En este prototipo se puede ver como se detectan las células tumorales en imagenes de cerebros de forma detallada, utilizando cuatro capas distintas y combinandolas para una mejor presición.</p>
+                </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ptc4Awb0UpU?si=34AVQ-oQ9LbjWN8P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
-    </div>
-    <footer>
-        <p>&copy; 2024 Patolog-IA. Todos los derechos reservados.</p>
-    </footer>
-    <script src="script_index.js"></script>
+        <footer class="footer">
+            <div class="container-footer">
+                <div class="footer-section">
+                    <h3>Contacta con Nosotros</h3>
+                    <p>Universidad Nacional del Centro de la Provincia de Buenos Aires, Tandil, Argentina</p>
+                    <p>Teléfono: 123-456-7890</p>
+                    <p>Email: info@patolog-ia.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="preferences-column">
+                        <a href="https://www.linkedin.com/company/patolog-ia" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.twitter.com/patolog-ia" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/patolog-ia" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/patolog-ia" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <div class="preferences-row">
+                        <a href="#about-us">Sobre Nosotros</a>
+                        <a href="#our-company">Nuestra Empresa</a>
+                        <a href="#team-members">Equipo</a>
+                        <a href="#demostration">Demo</a>
+                        <a href="#contactanos">Contacto</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Aviso Legal</h3>
+                    <div class="preferences-row">
+                        <a href="privacidad.html">Política de Privacidad</a>
+                        <a href="terminos.html">Términos y Condiciones</a>
+                        <a href="cookies.html">Política de Cookies</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Suscríbete</h3>
+                    <form action="suscripcion.php" method="post">
+                        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Patolog-IA. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </section>
 </body>
 </html>

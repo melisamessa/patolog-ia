@@ -38,9 +38,13 @@
     <div class="image-upload-section" style="display: none;">
         <input type="file" id="fileInput" accept="image/*">
         <label for="fileInput">Selecciona la imagen médica a analizar</label>
-        
+        <button id="uploadButton">Subir y analizar</button>
     </div>
-    <button id="backButton">Volver Atrás</button>
+    <div id="resultSection" style="display: none;">
+        <h2>Resultados del análisis</h2>
+        <p id="resultText"></p>
+    </div>
+    <button id="backButton" style="display: none;">Volver Atrás</button>
     <script src="script_patologia.js"></script>
 </body>
 </html>

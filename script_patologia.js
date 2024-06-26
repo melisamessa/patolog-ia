@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const title = document.querySelector('.title');
     const imageUploadSection = document.querySelector('.image-upload-section');
     const backButton = document.getElementById('backButton');
+    const uploadButton = document.getElementById('uploadButton');
+    const resultSection = document.getElementById('resultSection');
+    const resultText = document.getElementById('resultText');
     let selectedOrgan = null;
 
     // Ocultar el botón de volver al cargar la página
@@ -14,11 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
     }
 
+    // Manejar la selección de órganos
     organs.forEach(organ => {
         organ.addEventListener('click', function(event) {
             selectedOrgan = this;
             const selectedOrganName = selectedOrgan.querySelector('.organ-name').innerText;
-            console.log(selectedOrganName);
+
             // Ocultar los nombres de los órganos
             organNames.forEach(name => {
                 if (name !== selectedOrgan.nextElementSibling) {
@@ -33,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 
-            // Ocultar el título "Elige una opción"
+            // Mostrar el título "Elige una opción"
             title.style.display = 'block';
 
             // Mostrar la sección de carga de imagen
@@ -43,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
             backButton.style.display = 'block';
 
             // Mostrar el nombre del órgano seleccionado como título
-            console.log(title);
             title.innerText = selectedOrganName;
 
             // Evitar el efecto de agrandamiento de la imagen al pasar el mouse sobre ella
@@ -75,9 +78,41 @@ document.addEventListener('DOMContentLoaded', function() {
             selectedOrgan.querySelector('img').classList.remove('no-hover-effect');
         }
 
+        // Restaurar el título predeterminado
         title.innerText = 'Elige una opción';
+
+        // Limpiar los resultados mostrados
+        resultSection.style.display = 'none';
+        resultText.textContent = '';
 
         // Reiniciar la variable selectedOrgan
         selectedOrgan = null;
     });
+
+    // Manejar la subida de imagen y análisis
+    uploadButton.addEventListener('click', function() {
+        const fileInput = document.getElementById('fileInput');
+        const file = fileInput.files[0];
+
+        if (!file) {
+            alert('Por favor selecciona una imagen primero.');
+            return;
+        }
+
+        const formData = new FormData();
+        formData.append('file', file);
+        formData.append('organ', selectedOrgan.querySelector('.organ-name').innerText);
+
+        // Simular la petición al backend y mostrar resultados
+        // Aquí es donde conectarías con tu backend real para procesar la imagen y obtener resultados
+        // En este ejemplo, solo mostramos un mensaje de prueba
+        const resultadoPrueba = `Resultado de prueba para ${selectedOrgan.querySelector('.organ-name').innerText}`;
+        showResults(resultadoPrueba); // Reemplazar con la lógica real del backend
+    });
+
+    // Función para mostrar los resultados (puedes reemplazar con la lógica real del backend)
+    function showResults(result) {
+        resultText.textContent = result;
+        resultSection.style.display = 'block';
+    }
 });
